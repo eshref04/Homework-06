@@ -1,0 +1,934 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  height: 540px;
+  width: 100%;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://chronhib.maynoothuniversity.ie/helloworldapp/static/img/bg-masthead.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Metropolis, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+  font-weight: 600;
+  color: #212529;
+}
+
+.menu__icon {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  background-color: #33333368;
+  padding: 6px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  width: 30px;
+  height: 30px;
+  font-size: 9px;
+}
+
+.menu__icon:hover {
+  cursor: pointer;
+  background-color: #212529;
+}
+
+.header__heading h1 {
+  font-size: 46px;
+}
+
+.header__heading p {
+  font-style: italic;
+}
+
+.header__button button {
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  padding: 14px;
+  border-radius: 4px;
+  margin-top: 30px;
+  font-size: 8px;
+  background-color: #1d809f;
+  color: white;
+  border: none;
+}
+
+.header__button a {
+  text-decoration: none;
+}
+
+.header__button button:hover {
+  background-color: #1c6e87;
+  cursor: pointer;
+}
+
+.features {
+  height: 240px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.features__heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+}
+
+.features__heading h3 {
+  color: #212529;
+}
+
+.features__heading p {
+  font-size: 12px;
+  font-weight: 200;
+  margin-top: 6px;
+}
+
+.features__heading p a {
+  color: #3191c5;
+  font-weight: 200;
+}
+
+.features__button button {
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  padding: 14px;
+  border-radius: 4px;
+  margin-top: 30px;
+  font-size: 8px;
+  border: none;
+  background-color: #212529;
+  color: white;
+}
+
+.features__button a {
+  text-decoration: none;
+}
+
+.features__button button:hover {
+  background-color: #414950;
+  cursor: pointer;
+}
+
+.services {
+  height: 300px;
+  width: 100%;
+  background-color: #1d809f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+  color: white;
+}
+
+.services__heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.services__heading p {
+  color: #ecb807;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.services__icons {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.services__icons__resp,
+.services__icons__design,
+.services__icons__fav,
+.services__icons__questions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.services__icons__resp__icon,
+.services__icons__design__icon,
+.services__icons__fav__icon,
+.services__icons__questions__icon {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  color: #1d88b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services__icons__resp__content,
+.services__icons__design__content,
+.services__icons__fav__content,
+.services__icons__questions__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.services__icons__resp__content h4,
+.services__icons__design__content h4,
+.services__icons__fav__content h4,
+.services__icons__questions__content h4 {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.services__icons__resp__content p,
+.services__icons__design__content p,
+.services__icons__fav__content p,
+.services__icons__questions__content p {
+  font-size: 9px;
+  margin-top: 6px;
+  color: rgba(255, 255, 255, 0.599);
+}
+
+.download {
+  background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/bg-callout.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.download__heading {
+  text-align: center;
+  color: #212529;
+  font-family: Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.download__button button {
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  padding: 14px;
+  border-radius: 4px;
+  margin-top: 30px;
+  font-size: 8px;
+  background-color: #1d809f;
+  color: white;
+  border: none;
+}
+
+.download__button a {
+  text-decoration: none;
+}
+
+.download__button button:hover {
+  background-color: #1c6e87;
+  cursor: pointer;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 680px;
+  font-family: Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+}
+
+.projects__heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects__heading p {
+  color: #ecb807;
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.projects__heading h2 {
+  font-size: 26px;
+  color: #212529;
+}
+
+.projects__cards {
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 24px;
+  
+}
+
+.projects__cards__above,
+.projects__cards__down {
+  display: flex;
+  
+}
+
+.projects__cards__above__left {
+  background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-1.jpg);
+  width: 360px;
+  height: 240px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 150px;
+  padding-left: 30px;
+  transition: 0.3s;
+  position: relative;
+  
+}
+
+.projects__cards__above__left h6 {
+  text-transform: uppercase;
+  font-size: 7px;
+  font-weight: 800;
+}
+
+.projects__cards__above__left p {
+  font-size: 10px;
+  margin-top: 6px;
+}
+
+.projects__cards__above__left:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+
+
+.projects__cards__above__left:hover .projects__cards__above__left__overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #1c6e87d2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.projects__cards__above__right {
+  background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-2.jpg);
+  width: 360px;
+  height: 240px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 150px;
+  padding-left: 30px;
+  transition: 0.3s;
+}
+
+.projects__cards__above__right h6 {
+  text-transform: uppercase;
+  font-size: 7px;
+  font-weight: 800;
+}
+
+.projects__cards__above__right p {
+  font-size: 10px;
+  margin-top: 6px;
+}
+
+.projects__cards__above__right:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+
+
+.projects__cards__above__right:hover .projects__cards__above__right__overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #1c6e87d2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.projects__cards__down__left {
+  background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-3.jpg);
+  width: 360px;
+  height: 240px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 150px;
+  padding-left: 30px;
+  transition: 0.3s;
+}
+
+.projects__cards__down__left h6 {
+  text-transform: uppercase;
+  font-size: 7px;
+  font-weight: 800;
+}
+
+.projects__cards__down__left p {
+  font-size: 10px;
+  margin-top: 6px;
+}
+
+.projects__cards__down__left:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+
+
+.projects__cards__down__left:hover .projects__cards__down__left__overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #1c6e87d2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.projects__cards__down__right {
+  background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-4.jpg);
+  width: 360px;
+  height: 240px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 150px;
+  padding-left: 30px;
+  transition: 0.3s;
+}
+
+.projects__cards__down__right h6 {
+  text-transform: uppercase;
+  font-size: 7px;
+  font-weight: 800;
+}
+
+.projects__cards__down__right p {
+  font-size: 10px;
+  margin-top: 6px;
+}
+
+.projects__cards__down__right:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+
+
+.projects__cards__down__right:hover .projects__cards__down__right__overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #1c6e87d2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.buttons {
+  width: 100%;
+  height: 200px;
+  background-color: #1d809f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons__head {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.buttons__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.buttons__button__left,
+.buttons__button__right {
+  display: flex;
+  width: 80px;
+  justify-content: center;
+  align-items: center;
+  padding: 14px;
+  border-radius: 4px;
+  margin-top: 30px;
+  font-size: 8px;
+  border: none;
+}
+
+.buttons__button__right {
+  background-color: #212529;
+  color: white;
+}
+
+.buttons__button__left:hover {
+  background-color: rgb(218, 214, 214);
+  cursor: pointer;
+}
+
+.buttons__button__right:hover {
+  background-color: #414950;
+  cursor: pointer;
+}
+
+.map {
+  width: 100%;
+  height: 280px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  font-size: 10px;
+  background-color: #1d809f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-bottom: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+footer p {
+  font-size: 8px;
+  color: rgba(0, 0, 0, 0.509);
+}
+
+.arrow__icon {
+  display: flex;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  background-color: #33333368;
+  padding: 6px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  width: 30px;
+  height: 30px;
+  font-size: 9px;
+}
+
+.arrow__icon a {
+  color: white;
+  text-decoration: none;
+}
+
+.arrow__icon:hover {
+  cursor: pointer;
+  background-color: #212529;
+}
+
+@media only screen and (max-width: 768px) {
+  .services__icons {
+    flex-direction: column;
+  }
+
+  header {
+    height: 420px;
+  }
+
+  .header__heading h1 {
+    font-size: 60px;
+  }
+
+  .header__heading p {
+    font-size: 24px;
+  }
+
+  .header__button button {
+    padding: 24px 40px;
+    width: 186px;
+    font-size: 1rem;
+  }
+
+  .features {
+    height: 420px;
+  }
+
+  .features__heading h3 {
+    font-size: 24px;
+  }
+
+  .features__heading p {
+    font-size: 16px;
+  }
+
+  .features__button button {
+    padding: 24px 40px;
+    width: 186px;
+    font-size: 1rem;
+  }
+
+  .services {
+    height: 1040px;
+  }
+
+  .services__heading h2 {
+    font-size: 44px;
+  }
+
+  .services__heading p {
+    font-size: 16px;
+  }
+
+  .services__icons__resp__icon,
+  .services__icons__design__icon,
+  .services__icons__fav__icon,
+  .services__icons__questions__icon {
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+  }
+
+  .services__icons__resp__content h4,
+  .services__icons__design__content h4,
+  .services__icons__fav__content h4,
+  .services__icons__questions__content h4 {
+    font-size: 22px;
+  }
+
+  .services__icons__resp__content p,
+  .services__icons__design__content p,
+  .services__icons__fav__content p,
+  .services__icons__questions__content p {
+    font-size: 16px;
+  }
+
+  .download {
+    height: 620px;
+  }
+
+  .download__heading {
+    font-size: 34px;
+  }
+
+  .download__button button {
+    padding: 24px 40px;
+    width: 196px;
+    font-size: 1rem;
+  }
+
+  .projects {
+    height: 1440px;
+  }
+
+  .projects__heading h2 {
+    font-size: 38px;
+  }
+
+  .projects__heading p {
+    font-size: 16px;
+  }
+
+  .projects__cards__above,
+  .projects__cards__down {
+    flex-direction: column;
+  }
+
+  .projects__cards__above__left,
+  .projects__cards__above__right,
+  .projects__cards__down__left,
+  .projects__cards__down__right {
+    width: 470px;
+    height: 280px;
+    margin-top: 14px;
+  }
+
+  .buttons {
+    font-size: 24px;
+    height: 360px;
+  }
+
+  .buttons p {
+    font-size: 28px;
+  }
+
+  .buttons__button__left,
+  .buttons__button__right {
+    padding: 24px 40px;
+    width: 166px;
+    font-size: 1rem;
+  }
+
+  .map {
+    height: 680px;
+  }
+
+  footer {
+    height: 260px;
+  }
+
+  .icon {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    font-size: 20px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+
+  .menu__icon {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .arrow__icon {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .services__icons {
+    flex-direction: column;
+  }
+
+  header {
+    height: 420px;
+  }
+
+  .header__heading h1 {
+    font-size: 60px;
+  }
+
+  .header__heading p {
+    font-size: 24px;
+  }
+
+  .header__button button {
+    padding: 24px 40px;
+    width: 186px;
+    font-size: 1rem;
+  }
+
+  .features {
+    height: 420px;
+  }
+
+  .features__heading h3 {
+    font-size: 24px;
+  }
+
+  .features__heading p {
+    font-size: 16px;
+  }
+
+  .features__button button {
+    padding: 24px 40px;
+    width: 186px;
+    font-size: 1rem;
+  }
+
+  .services {
+    height: 1040px;
+  }
+
+  .services__heading h2 {
+    font-size: 44px;
+  }
+
+  .services__heading p {
+    font-size: 16px;
+  }
+
+  .services__icons__resp__icon,
+  .services__icons__design__icon,
+  .services__icons__fav__icon,
+  .services__icons__questions__icon {
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+  }
+
+  .services__icons__resp__content h4,
+  .services__icons__design__content h4,
+  .services__icons__fav__content h4,
+  .services__icons__questions__content h4 {
+    font-size: 22px;
+  }
+
+  .services__icons__resp__content p,
+  .services__icons__design__content p,
+  .services__icons__fav__content p,
+  .services__icons__questions__content p {
+    font-size: 16px;
+  }
+
+  .download {
+    height: 620px;
+  }
+
+  .download__heading {
+    font-size: 34px;
+  }
+
+  .download__button button {
+    padding: 24px 40px;
+    width: 196px;
+    font-size: 1rem;
+  }
+
+  .projects {
+    height: 1440px;
+  }
+
+  .projects__heading h2 {
+    font-size: 38px;
+  }
+
+  .projects__heading p {
+    font-size: 16px;
+  }
+
+  .projects__cards__above,
+  .projects__cards__down {
+    flex-direction: column;
+  }
+
+  .projects__cards__above__left,
+  .projects__cards__above__right,
+  .projects__cards__down__left,
+  .projects__cards__down__right {
+    width: 470px;
+    height: 280px;
+    margin-top: 14px;
+  }
+
+  .buttons {
+    font-size: 24px;
+    height: 360px;
+  }
+
+  .buttons p {
+    font-size: 28px;
+  }
+
+  .buttons__button__left,
+  .buttons__button__right {
+    padding: 24px 40px;
+    width: 166px;
+    font-size: 1rem;
+  }
+
+  .map {
+    height: 680px;
+  }
+
+  footer {
+    height: 260px;
+  }
+
+  .icon {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    font-size: 20px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+
+  .menu__icon {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .arrow__icon {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+  }
+}
